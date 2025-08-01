@@ -32,22 +32,21 @@ public class Main {
         //Toto je konstanta
         //final int cis1 = 55;
 
-//        Kalkulacka
-//        int prvniCislo;
-//        int druheCislo;
-//        Scanner mujScanner = new Scanner(System.in);
-//        System.out.println("Vepis prvni cislo:");
-//        prvniCislo = mujScanner.nextInt();
-//        System.out.println("Vepis druhe cislo:");
-//        druheCislo = mujScanner.nextInt();
-//
-//        System.out.println(prvniCislo + druheCislo);
-//        System.out.println(prvniCislo - druheCislo);
-//        System.out.println(prvniCislo * druheCislo);
-//        System.out.println(prvniCislo / druheCislo);
-//
-//        String pozdrav2 = "Ahoj svete";
-//        System.out.println(pozdrav2.length());
+        //Kalkulacka
+        int prvniCislo;
+        int druheCislo;
+        System.out.println("Vepis prvni cislo:");
+        prvniCislo = mujScanner.nextInt();
+        System.out.println("Vepis druhe cislo:");
+        druheCislo = mujScanner.nextInt();
+
+        System.out.println(prvniCislo + druheCislo);
+        System.out.println(prvniCislo - druheCislo);
+        System.out.println(prvniCislo * druheCislo);
+        System.out.println(prvniCislo / druheCislo);
+
+        String pozdrav2 = "Ahoj svete";
+        System.out.println(pozdrav2.length());
 
     }
 }
