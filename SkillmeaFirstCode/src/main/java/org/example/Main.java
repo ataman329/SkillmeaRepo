@@ -1,6 +1,4 @@
 package org.example;
-
-import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
 public class Main {
@@ -22,8 +20,7 @@ public class Main {
         System.out.println(pozdrav + cislo1);
         System.out.println(cislo1 + cislo2);
 
-
-        //Tato cast kodu me pozdravi
+        //Tato cast kodu ma pozdravi
         Scanner mujScanner = new Scanner(System.in);
         System.out.println("Vepis sve jmeno:");
         String mojeJmeno = mujScanner.nextLine();
@@ -45,8 +42,13 @@ public class Main {
         System.out.println(prvniCislo * druheCislo);
         System.out.println(prvniCislo / druheCislo);
 
-        String pozdrav2 = "Ahoj svete";
-        System.out.println(pozdrav2.length());
+        // vycistenie buffera
+        mujScanner.nextLine();
 
+        String pozdrav2 = mujScanner.nextLine();
+        System.out.println(pozdrav2.lastIndexOf("e"));
+        System.out.println(pozdrav2.contains("hoj"));
+        System.out.println(pozdrav2.equals("Ahoj welt"));
+        System.out.println(pozdrav2.toUpperCase());
     }
 }
